@@ -13,8 +13,8 @@ class ProductService extends APIService {
       'reverse_sort': 'false',
       'page': '1',
       'size': '10',
-      'APP_ID': appID,
-      'API_KEY': apiKey,
+      'Appid': appID,
+      'Apikey': apiKey,
     });
 
     List<Product> products = [];
