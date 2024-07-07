@@ -5,6 +5,7 @@ import 'package:sellyshop/src/presentation/screens/home_screen.dart/data/model/p
 
 final productProvider = Provider((ref) => ProductService());
 
+
 class ProductService extends APIService {
   Future<List<Product>> fetchProducts() async {
     final response = await get('/products', token: token, queryParameters: {
@@ -13,7 +14,7 @@ class ProductService extends APIService {
       'page': '1',
       'size': '10',
       'APP_ID': appID,
-      'API_KEY':  apiKey,
+      'API_KEY': apiKey,
     });
 
     List<Product> products = [];
@@ -25,6 +26,4 @@ class ProductService extends APIService {
     return products;
   }
 }
-
-
 

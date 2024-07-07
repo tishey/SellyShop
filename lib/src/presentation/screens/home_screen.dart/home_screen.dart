@@ -59,7 +59,7 @@ class HomeScreen extends ConsumerWidget {
             },
             error: (error, stackTrace) {
               print(stackTrace.toString());
-              return Text('Error: $error');
+              return Text('Expired Token Error: $error');
             },
             loading: () => const Center(
               child: CircularProgressIndicator(

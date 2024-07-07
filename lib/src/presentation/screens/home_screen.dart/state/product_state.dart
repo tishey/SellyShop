@@ -33,8 +33,8 @@ import 'package:sellyshop/src/presentation/screens/home_screen.dart/data/service
 //   }
 // }
 
-
-final productStateNotifierProvider = StateNotifierProvider<ProductStaeNotifier, AsyncValue<List<Product>>>(
+final productStateNotifierProvider =
+    StateNotifierProvider<ProductStaeNotifier, AsyncValue<List<Product>>>(
   (ref) => ProductStaeNotifier(ref),
 );
 
@@ -42,23 +42,21 @@ class ProductStaeNotifier extends StateNotifier<AsyncValue<List<Product>>> {
   ProductStaeNotifier(this.ref) : super(const AsyncLoading()) {
     fetchProductList();
   }
-  
+
   final Ref ref;
 
   Future<void> fetchProductList() async {
     try {
       state = const AsyncLoading();
       final response = await ref.watch(productProvider).fetchProducts();
-      
+
       state = AsyncValue.data(response);
-    }  on DioException catch (e) {
+    } on DioException catch (e) {
       print('Error fetching products: $e');
-            final errorMessage = DioExceptions.fromDioError(e);
+      print('StackTrace: ${StackTrace.current.toString()}');
+      final errorMessage = DioExceptions.fromDioError(e);
 
       state = AsyncValue.error(errorMessage, StackTrace.current);
     }
   }
-
-
-
 }
