@@ -58,6 +58,5 @@ SCREENSHOTS
 ![2024-07-07 13-42-11 High Res Screenshot](https://github.com/tishey/SellyShop/assets/66266110/d6b8ed9b-af6a-4109-b2e2-cf429e91ba05)
 ![2024-07-07 13-42-22 High Res Screenshot](https://github.com/tishey/SellyShop/assets/66266110/cd427562-4725-4506-90dc-87fbc8148778)
 
-APK DOWNLOAD LINK: https://drive.google.com/file/d/1Xz1a8OzX5tqxd18O5ataI23dYZ8UoRf_/view?usp=sharing
-APPETIZE LINK : https://appetize.io/app/b_x3xjuhwbkxcptu6ygkkddko2ne?device=pixel7&osVersion=13.0
-
+APK DOWNLOAD LINK: https://drive.google.com/file/d/1ZhfB7xB03qIE43JIcLsPWeojdDuyVRYn/view?usp=sharing
+APPETIZE LINK : https://appetize.io/app/b_4fomoaegf5tavfp4inm66phc7y
